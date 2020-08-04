@@ -1,0 +1,109 @@
+::-moz-selection { background: #FFCA29; }
+::selection { background: #FFCA29; }
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: rgba(0,0,0,.8);
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 106px;
+	margin:0;
+	font-weight: 700;
+	color: #04091A;
+}
+
+p {
+	margin-top: 8px;
+	margin-bottom: 48px;
+	font-size: 32px;
+	line-height: 52px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+main ul {
+	font-size: 28px;
+	line-height: 44px;
+}
+
+header ul {
+	display: flex;
+	margin: 24px;
+}
+
+header ul li + li{
+	margin-left: 16px;
+}
+
+header ul li a {
+	display: flex;
+	height: 24px;
+	width: 24px;
+}
+
+header ul li a svg {
+	fill: rgba(0,0,0,.65);
+}
+
+header ul li a:hover svg {
+	fill: rgba(0,0,0,.8);
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 32px);
+	padding: 16px;
+}
+
+header.top {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.pink {
+	color: #f36;
+	border-radius: 2px;
+	padding: 2px;
+}
+
+.pink:hover {
+	background-color: #f36;
+	color: #fff;
+}
+
+.purple {
+	color: #91F;
+	border-radius: 2px;
+	padding: 2px;
+}
+
+.purple:hover {
+	background-color: #91F;
+	color: #fff;
+}
+
+.blue {
+	color: #0af;
+	border-radius: 2px;
+	padding: 2px;
+}
+
+.blue:hover {
+	background-color: #0af;
+	color: #fff;
+}
