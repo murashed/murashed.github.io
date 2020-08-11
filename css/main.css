@@ -198,10 +198,16 @@ header.top
     justify-content: center;
 }
 
+
+
 .portfolio-item figure
 {
     margin: 0;
     padding: 8px;
+}
+
+.bleed figure{
+    padding: 0;
 }
 
 .portfolio-item figure img
