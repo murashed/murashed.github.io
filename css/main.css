@@ -176,7 +176,7 @@ header.top
     margin-top: 32px;
 
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 24px;
     grid-row-gap: 24px;
 }
@@ -224,6 +224,14 @@ header.top
 .grid-4
 {
     grid-area: 2 / 6 / 3 / 11;
+}
+.grid-5
+{
+    grid-area: 3 / 1 / 4 / 6;
+}
+.grid-6
+{
+    grid-area: 3 / 6 / 4 / 11;
 }
 
 section + section
