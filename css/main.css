@@ -79,54 +79,67 @@ ul
     list-style: none;
 }
 
-main ul
+header ul
 {
     font-size: 28px;
     line-height: 44px;
 }
 
-header ul
+main
+{
+    max-width: 1062px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0 16px;
+}
+header
+{
+    max-width: 1062px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0 16px;
+}
+
+footer
 {
     display: flex;
 
-    margin: 24px;
+    max-width: 1062px;
+    margin: 100px auto 24px auto;
+    padding: 24px 0;
+
+    border-top: 1px solid rgba(0,0,0,.08);
+
+    align-items: center;
+    justify-content: flex-end;
 }
 
-header ul li + li
+footer ul
+{
+    display: flex;
+
+    height: 24px;
+    margin: 0;
+}
+
+footer ul li
+{
+    display: flex;
+}
+
+footer ul li + li
 {
     margin-left: 12px;
 }
 
-
-
-header ul li a svg
+footer ul li a svg
 {
     fill: rgba(0,0,0,.35);
 }
 
-header ul li a:hover svg
+footer ul li a:hover svg
 {
     fill: rgba(0,0,0,.8);
-}
-
-main
-{
-    max-width: 1062px;
-    margin: 140px auto;
-    padding: 0 16px;
-}
-
-header.top
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-
-    display: flex;
-
-    align-items: flex-end;
-    justify-content: flex-end;
 }
 
 .pink
@@ -208,6 +221,7 @@ header.top
 
     min-height: 300px;
     max-height: 400px;
+    padding: 24px;
 
     background-color: #f9f9fb;
 
@@ -215,15 +229,21 @@ header.top
     justify-content: center;
 }
 
-.portfolio-item figure
-{
-    margin: 0;
-    padding: 8px;
-}
-
-.bleed figure
+.portfolio-item.bleed
 {
     padding: 0;
+}
+
+.portfolio-item figure
+{
+    display: flex;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+    justify-content: center;;
 }
 
 .portfolio-item figure img
@@ -240,12 +260,6 @@ section + section
 {
     section + section
     {
-        margin-top: 180px;
+        margin-top: 160px;
     }
-}
-
-video
-{
-    width: auto;
-    height: 100%;
 }
