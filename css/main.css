@@ -20,12 +20,20 @@ body
 
 h1
 {
-    font-size: 106px;
+    font-size: 80px;
     font-weight: 700;
 
     margin: 0;
 
     color: #04091a;
+}
+
+@media (min-width: 450px)
+{
+    h1
+    {
+        font-size: 106px;
+    }
 }
 
 h2
@@ -86,20 +94,14 @@ header ul
 
 header ul li + li
 {
-    margin-left: 16px;
+    margin-left: 12px;
 }
 
-header ul li a
-{
-    display: flex;
 
-    width: 24px;
-    height: 24px;
-}
 
 header ul li a svg
 {
-    fill: rgba(0,0,0,.65);
+    fill: rgba(0,0,0,.35);
 }
 
 header ul li a:hover svg
@@ -175,10 +177,19 @@ header.top
 
     margin-top: 32px;
 
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+@media (min-width: 600px)
+{
+    .grid
+    {
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+    }
 }
 
 .grid--single
@@ -195,7 +206,8 @@ header.top
 {
     display: flex;
 
-    height: 400px;
+    min-height: 300px;
+    max-height: 400px;
 
     background-color: #f9f9fb;
 
@@ -203,15 +215,14 @@ header.top
     justify-content: center;
 }
 
-
-
 .portfolio-item figure
 {
     margin: 0;
     padding: 8px;
 }
 
-.bleed figure{
+.bleed figure
+{
     padding: 0;
 }
 
@@ -220,32 +231,21 @@ header.top
     max-width: 100%;
 }
 
-.grid-1
-{
-    grid-area: 1 / 1 / 2 / 6;
-}
-.grid-2
-{
-    grid-area: 1 / 6 / 2 / 11;
-}
-.grid-3
-{
-    grid-area: 2 / 1 / 3 / 6;
-}
-.grid-4
-{
-    grid-area: 2 / 6 / 3 / 11;
-}
-.grid-5
-{
-    grid-area: 3 / 1 / 4 / 6;
-}
-.grid-6
-{
-    grid-area: 3 / 6 / 4 / 11;
-}
-
 section + section
 {
-    margin-top: 180px;
+    margin-top: 80px;
+}
+
+@media (min-width: 450px)
+{
+    section + section
+    {
+        margin-top: 180px;
+    }
+}
+
+video
+{
+    width: auto;
+    height: 100%;
 }
