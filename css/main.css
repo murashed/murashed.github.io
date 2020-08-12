@@ -40,6 +40,8 @@ h2
 {
     font-size: 28px;
     font-weight: 500;
+
+    margin: 0 0 16px 0;
 }
 
 p
@@ -88,8 +90,7 @@ header ul
 main
 {
     max-width: 1062px;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 100px auto 140px auto;
     padding: 0 16px;
 }
 header
@@ -104,21 +105,19 @@ footer
 {
     display: flex;
 
-    max-width: 1062px;
-    margin: 100px auto 24px auto;
-    padding: 24px 0;
+    padding: 16px 24px;
 
-    border-top: 1px solid rgba(0,0,0,.08);
+    background-color: #04091a;
 
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 footer ul
 {
     display: flex;
 
-    height: 24px;
+    height: 20px;
     margin: 0;
 }
 
@@ -134,12 +133,14 @@ footer ul li + li
 
 footer ul li a svg
 {
-    fill: rgba(0,0,0,.35);
+    width: 20px;
+
+    fill: rgba(255,255,255,.85);
 }
 
 footer ul li a:hover svg
 {
-    fill: rgba(0,0,0,.8);
+    fill: rgba(255,255,255,1);
 }
 
 .pink
@@ -260,6 +261,6 @@ section + section
 {
     section + section
     {
-        margin-top: 160px;
+        margin-top: 140px;
     }
 }
