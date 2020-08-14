@@ -67,13 +67,15 @@ p.role
     max-width: 520px;
 }
 
-p.lead
+p.lead,
+header h2
 {
     font-size: 32px;
     line-height: 52px;
 
     margin-top: 8px;
     margin-bottom: 48px;
+    font-weight: 400;
 }
 
 ul
@@ -96,12 +98,18 @@ main
     margin: 100px auto 140px auto;
     padding: 0 16px;
 }
+
 header
 {
     max-width: 1062px;
     margin: 0 auto;
     margin-top: 100px;
     padding: 0 16px;
+}
+
+main header {
+    margin: 0;
+    padding: 0;
 }
 
 footer
